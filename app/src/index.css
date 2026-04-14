@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+
+/* ── CSS Variables ──────────────────────────────────────────────────────── */
+:root {
+  --bg:              #080810;
+  --surface:         rgba(255,255,255,0.04);
+  --surface-2:       rgba(255,255,255,0.02);
+  --border:          rgba(255,255,255,0.10);
+  --border-dim:      rgba(255,255,255,0.06);
+
+  --gold:            #F0D080;
+  --gold-08:         rgba(240,208,128,0.08);
+  --gold-11:         rgba(240,208,128,0.11);
+  --gold-15:         rgba(240,208,128,0.15);
+  --gold-18:         rgba(240,208,128,0.18);
+  --gold-22:         rgba(240,208,128,0.22);
+  --gold-25:         rgba(240,208,128,0.25);
+  --gold-33:         rgba(240,208,128,0.33);
+  --gold-44:         rgba(240,208,128,0.44);
+  --gold-55:         rgba(240,208,128,0.55);
+  --gold-66:         rgba(240,208,128,0.66);
+  --gold-77:         rgba(240,208,128,0.77);
+  --gold-88:         rgba(240,208,128,0.88);
+
+  --cyan:            #7FD4F0;
+  --cyan-06:         rgba(127,212,240,0.06);
+  --cyan-15:         rgba(127,212,240,0.15);
+  --cyan-22:         rgba(127,212,240,0.22);
+  --cyan-44:         rgba(127,212,240,0.44);
+
+  --purple:          #B89AF0;
+  --purple-06:       rgba(184,154,240,0.06);
+  --purple-11:       rgba(184,154,240,0.11);
+  --purple-22:       rgba(184,154,240,0.22);
+  --purple-44:       rgba(184,154,240,0.44);
+
+  --green:           #7AF0B0;
+  --green-15:        rgba(122,240,176,0.15);
+  --green-22:        rgba(122,240,176,0.22);
+  --green-44:        rgba(122,240,176,0.44);
+
+  --red:             #F07070;
+  --red-10:          rgba(240,112,112,0.10);
+  --red-22:          rgba(240,112,112,0.22);
+  --red-33:          rgba(240,112,112,0.33);
+
+  --white:           #F8F4EE;
+  --text-muted:      rgba(248,244,238,0.55);
+}
+
+/* ── Reset ──────────────────────────────────────────────────────────────── */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--white);
+  font-family: 'Crimson Pro', serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* ── Grain texture overlay ──────────────────────────────────────────────── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.035;
+}
+
+/* ── Gold rule ──────────────────────────────────────────────────────────── */
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-44), var(--gold), var(--gold-44), transparent);
+  border: none;
+  margin: 0;
+}
+
+/* ── Fade-up on scroll ──────────────────────────────────────────────────── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Ibis golden pulse ──────────────────────────────────────────────────── */
+@keyframes goldenPulse {
+  0%, 100% { filter: drop-shadow(0 0 10px var(--gold)) drop-shadow(0 0 28px var(--gold-66)); }
+  50%       { filter: drop-shadow(0 0 22px var(--white)) drop-shadow(0 0 55px var(--gold-88)); }
+}
+.ibis-glow { animation: goldenPulse 3s ease-in-out infinite; }
+
+/* ── Active dot pulse ───────────────────────────────────────────────────── */
+@keyframes activePulse {
+  0%, 100% { box-shadow: 0 0 6px var(--green), 0 0 14px var(--green); }
+  50%       { box-shadow: 0 0 10px var(--green), 0 0 24px var(--green); }
+}
+.active-dot { animation: activePulse 2s ease-in-out infinite; }
+
+/* ── Scrollbar ──────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--gold-44); border-radius: 2px; }
+
+/* ── Responsive grids ───────────────────────────────────────────────────── */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+}
