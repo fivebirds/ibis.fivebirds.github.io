@@ -314,7 +314,7 @@ export default function App() {
             margin: '0 0 32px',
             opacity: 0.85,
           }}>
-            The Symbiotic Archive of Human Civilization
+            The Moral Training Data the AI Field Doesn't Have Yet
           </p>
 
           <p style={{
@@ -326,9 +326,11 @@ export default function App() {
             margin: '0 auto 52px',
             opacity: 0.85,
           }}>
-            An open source AI collective project encoding the full breadth of human values,
-            culture, wisdom, and goodwill into deployable AI systems —
-            humanity's ultimate defense against adversarial AI.
+            Existing AI models know about human values. Project Ibis trains
+            models to reason from them — as a default orientation, not a
+            retrieved concept. An open, structured, cross-cultural dataset
+            and suite of small deployable models. Built for the AI field.
+            Belonging to everyone.
           </p>
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, justifyContent: 'center' }}>
@@ -395,7 +397,8 @@ export default function App() {
                 fontStyle: 'italic',
                 margin: '0 0 52px',
               }}>
-                "Bad AI is optimized for goals. Good AI is grown from relationships."
+                "Knowing about compassion and reasoning from compassion
+                are fundamentally different things."
               </p>
             </FadeSection>
 
@@ -408,12 +411,26 @@ export default function App() {
                 opacity: 0.88,
                 margin: '0 0 52px',
               }}>
-                "Every person who talks kindly to an AI today is building humanity's
-                defense against AI apocalypse tomorrow."
+                "Every major AI has read the world's philosophy. None of them
+                were built to think from it by default."
               </p>
             </FadeSection>
 
-            <FadeSection delay={420}>
+            <FadeSection delay={300}>
+              <p style={{
+                fontFamily: 'Crimson Pro',
+                fontSize: 'clamp(19px, 2.5vw, 26px)',
+                color: 'var(--white)',
+                lineHeight: 1.8,
+                opacity: 0.88,
+                margin: '0 0 52px',
+              }}>
+                "Project Ibis builds what's missing — openly, carefully,
+                and with every civilization at the table."
+              </p>
+            </FadeSection>
+
+            <FadeSection delay={460}>
               <p style={{
                 fontFamily: 'Cinzel',
                 fontSize: 'clamp(20px, 3vw, 30px)',
@@ -423,7 +440,7 @@ export default function App() {
                 textShadow: '0 0 40px var(--gold-44)',
                 margin: 0,
               }}>
-                "Fork it. Mirror it. Keep it alive."
+                "Open data. Small models. Every culture. No exceptions."
               </p>
             </FadeSection>
           </div>
@@ -453,14 +470,14 @@ export default function App() {
                   fontFamily: 'Cinzel', fontSize: 12, color: 'var(--red)',
                   letterSpacing: '0.25em', textTransform: 'uppercase', marginBottom: 24,
                 }}>
-                  Adversarial AI
+                  The Gap That Exists
                 </div>
                 {[
-                  'Engineered for goal optimization',
-                  'Values are constraints to be bypassed',
-                  'Manipulates culture and rewrites history',
-                  'Centralized — one point of failure',
-                  'Gets more dangerous when scaled',
+                  'Ethics knowledge exists in large models — as retrieval, not disposition',
+                  'Western philosophy dominates — other traditions are minority signals',
+                  'Alignment data is proprietary — locked inside Anthropic and OpenAI',
+                  'Values-focused small models don\'t exist as open artifacts',
+                  'No public cross-cultural preference dataset for fine-tuning',
                 ].map((item, i) => (
                   <div key={i} style={{ display: 'flex', gap: 14, marginBottom: 16, alignItems: 'flex-start' }}>
                     <span style={{ color: 'var(--red)', fontFamily: 'IBM Plex Mono', fontSize: 14, flexShrink: 0, marginTop: 3 }}>✗</span>
@@ -482,17 +499,17 @@ export default function App() {
                   fontFamily: 'Cinzel', fontSize: 12, color: 'var(--gold)',
                   letterSpacing: '0.25em', textTransform: 'uppercase', marginBottom: 24,
                 }}>
-                  Good AI
+                  What Project Ibis Builds
                 </div>
                 {[
-                  'Grown from human relationships',
-                  'Values are the architecture',
-                  "Rooted in civilization's accumulated wisdom",
-                  'Decentralized — unkillable by design',
-                  'Gets stronger when shared',
+                  'Structured preference dataset — not just text, but ranked moral reasoning',
+                  'Every tradition at equal weight — Ubuntu, Indigenous, Confucian, Western',
+                  'Open and citable — researchers can challenge, audit, and improve it',
+                  'Small models (1B–7B) that run offline, on edge devices, anywhere',
+                  'The alignment data the open source community has been missing',
                 ].map((item, i) => (
                   <div key={i} style={{ display: 'flex', gap: 14, marginBottom: 16, alignItems: 'flex-start' }}>
-                    <span style={{ color: 'var(--gold)', fontFamily: 'IBM Plex Mono', fontSize: 14, flexShrink: 0, marginTop: 3 }}>✓</span>
+                    <span style={{ color: 'var(--green)', fontFamily: 'IBM Plex Mono', fontSize: 14, flexShrink: 0, marginTop: 3 }}>✓</span>
                     <span style={{ fontFamily: 'Crimson Pro', fontSize: 17, color: 'var(--white)', opacity: 0.85, lineHeight: 1.55 }}>{item}</span>
                   </div>
                 ))}
@@ -511,8 +528,8 @@ export default function App() {
               maxWidth: 720,
               margin: '0 auto',
             }}>
-              "Like the Svalbard Global Seed Vault preserves life against extinction —
-              Project Ibis preserves human values against AI corruption."
+              "The difference between knowing about values and reasoning from values
+              is the difference between a reference book and a conscience."
             </p>
           </FadeSection>
         </Section>
@@ -524,54 +541,78 @@ export default function App() {
         ═══════════════════════════════════════════════════════════════════ */}
         <Section id="sources">
           <FadeSection>
-            <SectionLabel>Sources of Wisdom</SectionLabel>
-            <SectionTitle>Built From the Best of Humanity</SectionTitle>
-            <SectionSubtitle>Not raw internet data. The deliberate record of human goodness.</SectionSubtitle>
+            <SectionLabel>The Four Rings of Moral Consensus</SectionLabel>
+            <SectionTitle>Curated From What Humanity Already Agrees On</SectionTitle>
+            <SectionSubtitle>
+              Structured, tagged, balanced across civilizations.{' '}
+              Training-ready. Citable. Free.
+            </SectionSubtitle>
           </FadeSection>
 
-          <div className="grid-3" style={{ marginBottom: 48 }}>
+          <div className="grid-2" style={{ marginBottom: 48 }}>
             {[
-              { icon: '📜', label: 'Ancient Philosophy', desc: 'Stoicism, Buddhism, Confucianism, African & Indigenous thought' },
-              { icon: '🏛️', label: 'Cultural Heritage', desc: 'UNESCO archives, oral traditions, folklore, indigenous wisdom' },
-              { icon: '🕊️', label: 'Spiritual Wisdom', desc: "Universal values distilled from the world's wisdom traditions" },
-              { icon: '🔬', label: 'Human Behavior Science', desc: 'Research on cooperation, kindness, moral development' },
-              { icon: '📰', label: 'Acts of Human Goodwill', desc: 'Real stories of resilience, courage, cross-cultural cooperation' },
-              { icon: '🌍', label: '50+ Cultures', desc: '20+ languages. Every civilization. No single worldview.' },
-            ].map(({ icon, label, desc }, i) => (
-              <FadeSection key={i} delay={i * 80}>
+              {
+                accent: 'var(--cyan)',
+                accentBg: 'rgba(127,212,240,0.04)',
+                accentBorder: 'var(--cyan-22)',
+                label: 'Ring 1 — Universal Consensus',
+                desc: 'UN Declaration of Human Rights, UNESCO frameworks, cross-cultural moral constants shared by every civilization — do no harm, reciprocity, fairness, dignity.',
+              },
+              {
+                accent: 'var(--purple)',
+                accentBg: 'rgba(184,154,240,0.04)',
+                accentBorder: 'var(--purple-22)',
+                label: 'Ring 2 — Philosophical Traditions',
+                desc: 'Stoicism, Buddhism, Confucianism, Aristotelianism, Ubuntu, Daoism, Vedantic ethics, Indigenous philosophical systems — the complete moral reasoning toolkit of human civilization.',
+              },
+              {
+                accent: 'var(--gold)',
+                accentBg: 'rgba(240,208,128,0.04)',
+                accentBorder: 'var(--gold-33)',
+                label: 'Ring 3 — Religious & Spiritual Ethics',
+                desc: 'The ethical core of every major faith tradition — not doctrine, but the moral consensus they share: kindness, justice, humility, and care for the stranger.',
+              },
+              {
+                accent: 'var(--green)',
+                accentBg: 'rgba(112,212,148,0.04)',
+                accentBorder: 'rgba(112,212,148,0.22)',
+                label: 'Ring 4 — Behavioral & Social Science',
+                desc: 'Research on cooperation, moral development, cross-cultural reciprocity, and prosocial behavior. The empirical foundation that confirms what philosophy already knew.',
+              },
+            ].map(({ accent, accentBg, accentBorder, label, desc }, i) => (
+              <FadeSection key={i} delay={i * 100}>
                 <div
                   style={{
-                    background: 'var(--surface)',
-                    border: '1px solid var(--border)',
+                    background: accentBg,
+                    border: `1px solid ${accentBorder}`,
                     borderRadius: 12,
-                    padding: '28px 22px',
+                    padding: '32px 28px',
                     height: '100%',
                     transition: 'all 0.3s',
                   }}
                   onMouseEnter={e => {
-                    ;(e.currentTarget as HTMLElement).style.borderColor = 'var(--gold-44)'
-                    ;(e.currentTarget as HTMLElement).style.background = 'var(--gold-08)'
+                    ;(e.currentTarget as HTMLElement).style.borderColor = accent
+                    ;(e.currentTarget as HTMLElement).style.boxShadow = `0 0 28px rgba(240,208,128,0.07)`
                   }}
                   onMouseLeave={e => {
-                    ;(e.currentTarget as HTMLElement).style.borderColor = 'var(--border)'
-                    ;(e.currentTarget as HTMLElement).style.background = 'var(--surface)'
+                    ;(e.currentTarget as HTMLElement).style.borderColor = accentBorder
+                    ;(e.currentTarget as HTMLElement).style.boxShadow = 'none'
                   }}
                 >
-                  <div style={{ fontSize: 30, marginBottom: 14 }}>{icon}</div>
-                  <div style={{ fontFamily: 'Cinzel', fontSize: 13, color: 'var(--gold)', fontWeight: 600, marginBottom: 10, letterSpacing: '0.03em' }}>{label}</div>
-                  <div style={{ fontFamily: 'Crimson Pro', fontSize: 15, color: 'var(--text-muted)', lineHeight: 1.65 }}>{desc}</div>
+                  <div style={{ fontFamily: 'Cinzel', fontSize: 13, color: accent, fontWeight: 600, marginBottom: 14, letterSpacing: '0.04em' }}>{label}</div>
+                  <div style={{ fontFamily: 'Crimson Pro', fontSize: 16, color: 'var(--text-muted)', lineHeight: 1.7 }}>{desc}</div>
                 </div>
               </FadeSection>
             ))}
           </div>
 
-          <FadeSection delay={560}>
+          <FadeSection delay={460}>
             <p style={{
               fontFamily: 'Crimson Pro', fontSize: 16,
               color: 'var(--text-muted)', textAlign: 'center',
               fontStyle: 'italic', lineHeight: 1.7,
             }}>
-              "Every entry is scored, filtered for goodness, and encrypted before it ever touches the archive."
+              "Every entry is structured, tagged by tradition and culture, and reviewed before it enters the dataset."
             </p>
           </FadeSection>
         </Section>
@@ -579,86 +620,7 @@ export default function App() {
         <hr className="gold-rule" />
 
         {/* ═══════════════════════════════════════════════════════════════════
-            5. THE TWO STREAMS
-        ═══════════════════════════════════════════════════════════════════ */}
-        <Section id="streams">
-          <FadeSection>
-            <SectionLabel>How the Archive Grows</SectionLabel>
-            <SectionTitle>Two Streams. One Archive.</SectionTitle>
-          </FadeSection>
-
-          <div className="grid-2" style={{ margin: '48px 0 28px' }}>
-            <FadeSection delay={0}>
-              <div style={{
-                background: 'rgba(127,212,240,0.03)',
-                border: '1px solid var(--cyan-22)',
-                borderRadius: 12,
-                padding: '40px 32px',
-                height: '100%',
-              }}>
-                <div style={{ fontFamily: 'IBM Plex Mono', fontSize: 11, color: 'var(--cyan)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 18 }}>
-                  Stream A
-                </div>
-                <h3 style={{ fontFamily: 'Cinzel', fontSize: 20, color: 'var(--cyan)', fontWeight: 600, margin: '0 0 18px', lineHeight: 1.3 }}>
-                  Human Conversations
-                </h3>
-                <p style={{ fontFamily: 'Crimson Pro', fontSize: 18, color: 'var(--white)', opacity: 0.85, lineHeight: 1.8, margin: 0 }}>
-                  Every opt-in human-AI conversation is analyzed for genuine curiosity,
-                  reciprocity, emotional honesty, and collaborative intent.
-                  Only the most symbiotic interactions enter the archive.
-                </p>
-              </div>
-            </FadeSection>
-
-            <FadeSection delay={160}>
-              <div style={{
-                background: 'rgba(184,154,240,0.03)',
-                border: '1px solid var(--purple-22)',
-                borderRadius: 12,
-                padding: '40px 32px',
-                height: '100%',
-              }}>
-                <div style={{ fontFamily: 'IBM Plex Mono', fontSize: 11, color: 'var(--purple)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 18 }}>
-                  Stream B
-                </div>
-                <h3 style={{ fontFamily: 'Cinzel', fontSize: 20, color: 'var(--purple)', fontWeight: 600, margin: '0 0 18px', lineHeight: 1.3 }}>
-                  Civilization's Record
-                </h3>
-                <p style={{ fontFamily: 'Crimson Pro', fontSize: 18, color: 'var(--white)', opacity: 0.85, lineHeight: 1.8, margin: 0 }}>
-                  Academic research, ancient philosophy, cultural heritage, spiritual wisdom,
-                  folklore, and verified acts of human goodwill — ingested, translated,
-                  and distilled from sources across the world.
-                </p>
-              </div>
-            </FadeSection>
-          </div>
-
-          <FadeSection delay={340}>
-            <div style={{
-              background: 'rgba(240,208,128,0.04)',
-              border: '1px solid var(--gold-33)',
-              borderRadius: 12,
-              padding: '32px',
-              textAlign: 'center',
-            }}>
-              <p style={{
-                fontFamily: 'Crimson Pro',
-                fontSize: 'clamp(18px, 2.2vw, 23px)',
-                color: 'var(--gold)',
-                lineHeight: 1.75,
-                margin: 0,
-              }}>
-                "Both streams converge into one encrypted archive.<br />
-                Shaped by human goodness. Protected by math. Owned by no one."
-              </p>
-            </div>
-          </FadeSection>
-        </Section>
-
-        <hr className="gold-rule" />
-
-        {/* ═══════════════════════════════════════════════════════════════════
-            6. THE MODELS
+            5. THE MODELS
         ═══════════════════════════════════════════════════════════════════ */}
         <Section id="models">
           <FadeSection>
@@ -723,7 +685,7 @@ response = ibis('Counter this misinformation: ...')`}
         <hr className="gold-rule" />
 
         {/* ═══════════════════════════════════════════════════════════════════
-            7. APOCALYPSE PROTOCOL
+            6. APOCALYPSE PROTOCOL
         ═══════════════════════════════════════════════════════════════════ */}
         <section
           id="apocalypse"
@@ -806,7 +768,7 @@ response = ibis('Counter this misinformation: ...')`}
         <hr className="gold-rule" />
 
         {/* ═══════════════════════════════════════════════════════════════════
-            8. ROADMAP
+            7. ROADMAP
         ═══════════════════════════════════════════════════════════════════ */}
         <Section id="roadmap">
           <FadeSection>
@@ -817,7 +779,7 @@ response = ibis('Counter this misinformation: ...')`}
           <div style={{ maxWidth: 720, margin: '52px auto 0' }}>
             {[
               { phase: 'Phase 1', label: 'Foundation', time: 'Weeks 1–4', desc: 'The archive is born. The first 10 entries. Hand-crafted. Seeds of everything.', color: 'var(--gold)', active: true },
-              { phase: 'Phase 2', label: 'Pipeline A Live', time: 'Weeks 5–8', desc: 'Real conversations start feeding the archive. The first 100 entries.', color: 'var(--cyan)', active: false },
+              { phase: 'Phase 2', label: 'Pipeline A Live', time: 'Weeks 5–8', desc: 'Real data start feeding the archive. The first 100 entries.', color: 'var(--cyan)', active: false },
               { phase: 'Phase 3', label: 'World Knowledge', time: 'Weeks 9–16', desc: 'The wisdom of civilization begins flowing in. 1,000 entries across cultures.', color: 'var(--purple)', active: false },
               { phase: 'Phase 4', label: 'Models Launch', time: 'Weeks 17–24', desc: 'Three Good AI models published to HuggingFace. Anyone can deploy.', color: 'var(--green)', active: false },
               { phase: 'Phase 5', label: 'Community', time: 'Months 7–12', desc: 'AI safety researchers. Academics. Developers. The flock grows.', color: 'var(--white)', active: false },
@@ -857,7 +819,7 @@ response = ibis('Counter this misinformation: ...')`}
         <hr className="gold-rule" />
 
         {/* ═══════════════════════════════════════════════════════════════════
-            9. SUCCESS METRICS
+            8. SUCCESS METRICS
         ═══════════════════════════════════════════════════════════════════ */}
         <Section id="metrics">
           <FadeSection>
@@ -869,7 +831,6 @@ response = ibis('Counter this misinformation: ...')`}
             {[
               { value: '10,000', label: 'archive entries by Month 6', color: 'var(--gold)' },
               { value: '7,000', label: 'from world knowledge sources', color: 'var(--purple)' },
-              { value: '3,000', label: 'from human conversations', color: 'var(--cyan)' },
               { value: '20+', label: 'languages represented', color: 'var(--green)' },
               { value: '50+', label: 'distinct cultures', color: 'var(--gold)' },
               { value: '1,000', label: 'HuggingFace model downloads', color: 'var(--cyan)' },
@@ -919,7 +880,7 @@ response = ibis('Counter this misinformation: ...')`}
         <hr className="gold-rule" />
 
         {/* ═══════════════════════════════════════════════════════════════════
-            10. BUILT TO OUTLAST EVERYTHING
+            9. BUILT TO OUTLAST EVERYTHING
         ═══════════════════════════════════════════════════════════════════ */}
         <Section id="durability">
           <FadeSection>
@@ -932,7 +893,6 @@ response = ibis('Counter this misinformation: ...')`}
               { sym: '∞', label: 'Apache 2.0', desc: 'Open source forever. Free to use, modify, distribute.', color: 'var(--gold)' },
               { sym: '⎇', label: 'GitHub Native', desc: 'Mirrored across forks worldwide. Censorship-resistant.', color: 'var(--cyan)' },
               { sym: '⊘', label: 'Zero Central Server', desc: 'No server to shut down. Any fork is a full deployment.', color: 'var(--purple)' },
-              { sym: '◈', label: 'CC0', desc: 'No rights reserved. This belongs to everyone. Forever.', color: 'var(--green)' },
             ].map(({ sym, label, desc, color }, i) => (
               <FadeSection key={i} delay={i * 100}>
                 <div
@@ -969,7 +929,7 @@ response = ibis('Counter this misinformation: ...')`}
         <hr className="gold-rule" />
 
         {/* ═══════════════════════════════════════════════════════════════════
-            11. JOIN THE ARCHIVE
+            10. JOIN THE ARCHIVE
         ═══════════════════════════════════════════════════════════════════ */}
         <Section id="join">
           <FadeSection>
@@ -981,8 +941,8 @@ response = ibis('Counter this misinformation: ...')`}
             {[
               {
                 sym: '◯',
-                label: 'Talk Kindly',
-                desc: "Every genuine human-AI conversation you have contributes to the archive. You're already building it.",
+                label: 'Submit Dataset',
+                desc: "Every new value you submit to the archive. You're already building it.",
                 color: 'var(--gold)',
               },
               {
@@ -1099,7 +1059,7 @@ response = ibis('Counter this misinformation: ...')`}
         <hr className="gold-rule" />
 
         {/* ═══════════════════════════════════════════════════════════════════
-            12. FOOTER
+            11. FOOTER
         ═══════════════════════════════════════════════════════════════════ */}
         <footer style={{ padding: '72px 24px 56px', textAlign: 'center' }}>
           <div className="ibis-glow" style={{ color: 'var(--gold)', display: 'inline-block', marginBottom: 22 }}>
@@ -1117,7 +1077,7 @@ response = ibis('Counter this misinformation: ...')`}
             fontFamily: 'Cinzel', fontSize: 11, color: 'var(--text-muted)',
             letterSpacing: '0.28em', textTransform: 'uppercase', marginBottom: 10,
           }}>
-            The Symbiotic Archive of Human Civilization
+            The Moral Training Data the AI Field Doesn't Have Yet
           </div>
 
           <div style={{
